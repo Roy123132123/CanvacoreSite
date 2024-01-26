@@ -6,43 +6,149 @@ ul {
   flex-direction: row;
 }
 
-body{
+body {
   height: 100vh;
   width: 100vw;
-  background-color: #2a2e30e3;
+  background-color: rgba(42, 46, 48, 0.89);
 }
-.Flex{
+
+/*White-theme*/
+.White-theme {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(137, 146, 146, 0.2);
+}
+
+.White-theme>.Nav>ul {
+  background-color: rgb(154, 153, 153);
+}
+
+.White-theme>.Flex>.Title {
+  color: rgba(116, 190, 162, 0.825);
+}
+
+.White-theme>.Nav>ul>li>.Ths {
+  width: 3.5vw;
+  height: 6vh;
+  background-image: url(./imgs/white.png);
+  background-size: 60%, 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  border-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
+  margin-top: 0.5vh;
+  margin-left: 65vw;
+  border-radius: 100%;
+}
+
+.White-theme>.Nav>ul>li>.Ths:hover {
+  background-color: rgba(210, 208, 208, 0.738);
+  background-size: 60%, 60%;
+  cursor: pointer;
+}
+.White-theme>.Nav>ul>li>.Gh {
+  width: 3.5vw;
+  height: 6vh;
+  background-image: url(/imgs/github.png);
+  background-size: 60%, 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  border-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 100%;
+  margin-top: 0.5vh;
+}
+
+.White-theme>.Nav>ul>li>.Gh:hover {
+
+  background-color: rgba(210, 208, 208, 0.738);
+  background-size: 60%, 60%;
+  cursor: pointer;
+}
+
+/*Dark-theme*/
+.Dark-theme {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(42, 46, 48, 0.89);
+}
+
+.Dark-theme>.Nav>ul>li>.Ths {
+  width: 3.5vw;
+  height: 6vh;
+  background-image: url(./imgs/dark.png);
+  background-size: 60%, 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  border-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
+  margin-top: 0.5vh;
+  margin-left: 65vw;
+  border-radius: 100%;
+}
+
+.Dark-theme>.Nav>ul>li>.Ths:hover{
+  background-color:  rgb(129, 139, 144);
+  background-size: 60%,60%;
+  cursor: pointer;
+}
+
+.Dark-theme>.Nav>ul>li>.Gh {
+  width: 3.5vw;
+  height: 6vh;
+  background-image: url(/imgs/github.png);
+  background-size: 60%, 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  border-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 100%;
+  margin-top: 0.5vh;
+}
+
+.Dark-theme>.Nav>ul>li>.Gh:hover {
+
+  background-color: rgb(129, 139, 144);
+  background-size: 60%, 60%;
+  cursor: pointer;
+}
+
+.Np {
+  padding-left: 1vw !important;
+}
+
+/*General classing */
+.Flex {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   top: 50%;
 }
-.Ths {
-  width: 5vw;
-  height: 5vh;
-  background-image: url(/imgs/ThemeIcon.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 0px;
-  margin: 0px;
-  border: none;
-  border-color: rgba(255, 255, 255,0);
-  background-color: rgba(255, 255, 255,0);
-  margin-top: 1vh;
-  margin-left: 69.5vw;
-}
 
-.Nav > ul{
+.Nav>ul {
   height: 7vh;
   width: 100vw;
   background-color: #5b6468;
 }
-.Nav >ul >li{
+
+.Nav>ul>li {
   padding-left: 5vw;
 }
-.Nav > ul >li > a{
+
+.Nav>ul>li>a {
   color: aquamarine;
   position: relative;
   top: 2vh;
@@ -50,33 +156,40 @@ body{
   font-size: 120%;
   opacity: 0.7;
 }
-.Nav{
+
+.Nav {
   position: absolute;
 }
 
 .Nav-li:hover {
-    opacity: 1;
+  opacity: 1;
 }
+
 .Nav-li::before {
-    top: 3vh;
-    transition: 300ms;
-    height: 3px;
-    content: "";
-    position: absolute;
-    background-color: rgb(131, 111, 248);
+  top: 3vh;
+  transition: 300ms;
+  height: 3px;
+  content: "";
+  position: absolute;
+  background-color: rgba(111, 248, 234, 0.6);
 }
+
 .nav-link-ltr::before {
-    width: 0%;
-    bottom:2%;
+  width: 0%;
+  bottom: 2%;
 }
+
 .nav-link-ltr:hover::before {
-    width: 100%;
+  width: 100%;
 }
-.Nav-li{
-    position: relative;
+
+.Nav-li {
+  position: relative;
 }
-.Title{
-  font-size: 170%; 
+
+.Title {
+  font-size: 170%;
   color: aquamarine;
 }
+
 /*# sourceMappingURL=style.css.map */

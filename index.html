@@ -12,14 +12,30 @@
     <script src="index.js" async defer></script>
 </head>
 
-<body>
+<body class="Dark-theme">
     <div class="Nav">
         <ul>
             <li><a class="Nav-li nav-link-ltr" href="#">basics</a></li>
             <li><a class="Nav-li nav-link-ltr" href="#">documentation</a></li>
-            <li><button class="Ths"></button></li>
+            <li><button class="Ths" id="Ths" onclick="SwitchThemes()"></button></li>
+            <li class="Np"><button class="Gh" onclick="Gh()"></button></li>
         </ul>
     </div>
+    <script>
+        function Gh() {
+            window.location.href = "https://github.com/Roy123132123/CanvacoreSite";
+        }
+        function SwitchThemes() {
+            var bodyElement = document.body;
+            if (bodyElement.classList.contains('Dark-theme')) {
+                bodyElement.classList.remove('Dark-theme');
+                bodyElement.classList.add('White-theme');
+            } else if (bodyElement.classList.contains('White-theme')) {
+                bodyElement.classList.remove('White-theme');
+                bodyElement.classList.add('Dark-theme');
+            }
+        }
+    </script>
     <div class="Flex">
         <h1 class="Title">Canva Core</h1>
     </div>
